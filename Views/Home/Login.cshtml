@@ -1,0 +1,58 @@
+﻿
+@{
+    ViewBag.Title = "ورود / ثبت نام - آکادمی گذرگاه";
+    Layout = "~/Views/Shared/_LayoutMain.cshtml";
+}
+
+@section styleSection
+{
+
+    <link href="@Url.Content("~/Assets/custom/stylesLogin.css")" rel="stylesheet" />
+
+}
+
+<div class="container">
+
+    <div class="row">
+
+
+        <div class="col-md-6 offset-3">
+
+            <div class="card bg-light mt-5">
+                <article class="card-body mx-auto" style="max-width: 400px;">
+                    <h4 class="card-title mt-3 text-center">ورود به پت لابراتور</h4>
+                    <p class="text-center">مرکز پزشکی آنلاین حیوانات</p>
+
+                    <p class="divider-text">
+                        <span class="bg-light">Pet Laboratory</span>
+                    </p>
+                    <form>
+                        <div class="form-group input-group">
+                            <div class="input-group-prepend">
+                                <span class="input-group-text"> <i class="fa fa-user"></i> </span>
+                            </div>
+                            <input name="" class="form-control text-center" placeholder="شماره موبایل را وارد کنید" autocomplete="off" type="text">
+                        </div> <!-- form-group// -->
+
+
+                        <div class="form-group input-group">
+                            <div class="input-group-prepend">
+                                <span class="input-group-text"> <i class="fa fa-lock"></i> </span>
+                            </div>
+                            <input class="form-control text-center" placeholder="رمز عبور را وارد کنید" autocomplete="off" type="password">
+                        </div> <!-- form-group// -->
+
+
+                        <div class="form-group">
+                            <button type="submit" class="btn btn-primary btn-block"> ورود به مرکز پزشکی  </button>
+                        </div> <!-- form-group// -->
+                        <p class="text-center">اگر ثبت نام نکرده اید ، اینجا کلیک کنید <a href="@Url.Action("Register","Home")">ثبت نام</a> </p>
+                    </form>
+                </article>
+            </div> <!-- card.// -->
+
+
+        </div>
+
+    </div>
+</div>

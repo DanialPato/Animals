@@ -1,0 +1,17 @@
+@import url('../css/fontsVazir.css');
+body
+{
+    font-family : 'myVazir' !important;
+}
+#sticky-footer {
+    flex-shrink: none;
+    position: fixed;
+    height: 90px;
+    bottom: 0;
+    width: 100%;
+}
+#MainLogo
+{
+    width:70px;
+    height:70px;
+}
